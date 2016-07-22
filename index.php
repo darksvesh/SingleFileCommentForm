@@ -355,10 +355,7 @@ private function CaptchaCheck(){
 	}
 	return $Result;
 }
-//Проверить не шифрованные передаваемые параметры управления
-private function CheckGets(){
 
-}
 //создание кукиса
 private function AddCookie($Name,$Value){
 	setcookie($Name, $Value, time()+36000);
@@ -552,7 +549,7 @@ public function Init(){
 	return;
 }
 }
-//Require_Once ("Website.php");
+
 Session_Start();
 $Site = new Website();
 $Site->Init(); 
